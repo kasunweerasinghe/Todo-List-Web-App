@@ -37,26 +37,26 @@ header {
     margin: 0 auto;
 }
 
-header>h1{
+header > h1 {
     font-size: 2.5rem;
     font-weight: 300;
     color: var(--gray);
     margin-bottom: 1rem;
 }
 
-#new-task-form{
+#new-task-form {
     display: flex;
 
 }
 
-input, button{
+input, button {
     appearance: none;
     border: none;
     outline: none;
     background: none;
 }
 
-#new-task-input{
+#new-task-input {
     flex: 1 1 0%;
     background-color: var(--darker);
     padding: 1rem;
@@ -67,11 +67,11 @@ input, button{
 }
 
 
-#new-task-input::placeholder{
+#new-task-input::placeholder {
     color: var(--gray);
 }
 
-#new-task-submit{
+#new-task-submit {
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
@@ -81,16 +81,83 @@ input, button{
     transition: 0.4s;
 }
 
-#new-task-submit:hover{
+#new-task-submit:hover {
     opacity: 0.8;
 }
 
-#new-task-submit:active{
+#new-task-submit:active {
     opacity: 0.6;
 }
 
-main{
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
+.task-list{
+    padding: 1rem;
+}
+
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content .text{
+    color: var(--light);
+    font-size: 1.1125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only){
+    color: var(--pink);
+
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover{
+    opacity: 0.8;
+}
+
+.task .actions button:active{
+    opacity: 0.6;
+}
+
+.task .actions .edit{
+    background-image: linear-gradient(to right, var(--pink)),
+    var(--purple);
+}
+
+.task .actions .delete{
+    color: crimson;
 }
 
 
