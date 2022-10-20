@@ -17,4 +17,20 @@ created by kasunrachintha on 10/20/22
     --purple: #8B5CF6;
 }
 
+* {
+    font-family: 'Fire sans', sans-serif;
+}
+
+/*body styles*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: white;
+}
+
+header{
+
+}
 
