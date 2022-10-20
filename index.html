@@ -12,9 +12,48 @@ created by kasunrachintha on 10/20/22
     <meta charset="UTF-8">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1  user-scalable=no" name="viewport">
     <title>To DO List</title>
 </head>
 <body>
+
+<header>
+    <h1>Task List</h1>
+    <form id="new-task-form">
+        <input
+                id="new-task-input"
+                placeholder="what do you have planed?"
+                type="text"/>
+        <input
+                id="new-task-submit"
+                type="submit"
+                value="Add task"/>
+    </form>
+</header>
+
+
+<main>
+    <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+            <div class="task">
+                <div class="content">
+                    <input
+                            class="text"
+                            type="text"
+                            value="My shiny task"
+                            readonly
+                    />
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Detele</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <script src="js/script.js"></script>
 </body>
