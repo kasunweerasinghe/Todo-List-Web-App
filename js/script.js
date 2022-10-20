@@ -29,7 +29,23 @@ window.addEventListener("load", () => {
         task_input_el.value = task;
         task_input_el.setAttribute('readonly','readonly')
 
+        task_content_el.appendChild(task_input_el);
 
+        const task_action_el = document.createElement('div');
+        task_action_el.classList.add('actions');
+
+        const task_edit_el = document.createElement('button');
+        task_edit_el.classList.add('edit')
+        task_edit_el.innerHTML = 'Edit';
+
+        const task_delete_el = document.createElement('button');
+        task_delete_el.classList.add('delete')
+        task_delete_el.innerHTML = 'Delete';
+
+        task_action_el.appendChild(task_edit_el);
+        task_action_el.appendChild(task_delete_el);
+
+        task_el.appendChild(task_delete_el);
 
         list_el.appendChild(task_el);
     })
